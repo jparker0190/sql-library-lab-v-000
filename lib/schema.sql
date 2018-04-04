@@ -21,3 +21,12 @@ year integer,
 series_id integer,
 id integer primary key
 );
+
+CREATE TABLE characters (
+name text,
+species text,
+motto text,
+series_id integer,
+author_id integer,
+id integer primary key
+);
