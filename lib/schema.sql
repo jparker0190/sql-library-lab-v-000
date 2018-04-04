@@ -30,3 +30,9 @@ series_id integer,
 author_id integer,
 id integer primary key
 );
+
+CREATE TABLE character_books(
+id integer primary key,
+book_id integer,
+character_id integer
+);
