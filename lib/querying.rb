@@ -21,6 +21,5 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "select name, count(character_id) from characters INNER JOIN character_books on 
-  character_books.character_id = characters.id group by name order by name, 
-  count(character_id) desc;"
+  character_books.character_id = characters.id group by name order by count(character_id) desc;"
 end
